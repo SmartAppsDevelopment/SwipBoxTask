@@ -16,6 +16,8 @@ android {
         targetSdk rootProject.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        buildConfigField "String", "BASE_URL", "\"https://v6.exchangerate-api.com/v6/\""
+        buildConfigField "String", "API_KEY", "\"709bc63dce30939075ff2bd4\""
     }
 
     buildTypes {
@@ -64,11 +66,19 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesVersion"
 
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
     //ktx for runtime ktx
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.lifecycleVersion"
-    implementation "androidx.fragment:fragment-ktx:1.4.1"
+//    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.lifecycleVersion"
+//    implementation "androidx.fragment:fragment-ktx:1.4.1"
     /////Koin Dependency Injection
     implementation "com.google.dagger:hilt-android:$hilt_version"
     kapt "com.google.dagger:hilt-compiler:$hilt_version"
+
+    debugImplementation "com.github.chuckerteam.chucker:library:3.5.2"
+    releaseImplementation "com.github.chuckerteam.chucker:library-no-op:3.5.2"
+
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
 }

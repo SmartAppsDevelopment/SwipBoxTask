@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.example.templatesampleapp.viewmodel.SharedViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/filledTextFieldCurInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="200 EUR"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittxt_currency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="100"
+                android:imeOptions="actionSearch"
+                android:inputType="numberDecimal"
+                android:singleLine="true"
+                android:textSize="@dimen/_18ssp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txt_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:text="To"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintEnd_toStartOf="@id/txtfieldspinner"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/filledTextFieldCurInput"
+            app:layout_constraintTop_toBottomOf="@id/filledTextFieldCurInput" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtfieldspinner"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Currency"
+            android:minWidth="@dimen/_120sdp"
+            app:layout_constraintBottom_toBottomOf="@id/txt_hint"
+            app:layout_constraintEnd_toEndOf="@id/filledTextFieldCurInput"
+            app:layout_constraintStart_toEndOf="@id/txtfieldspinner"
+            app:layout_constraintTop_toTopOf="@id/txt_hint">
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompletetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart_view"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtfieldspinner"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

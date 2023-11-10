@@ -25,8 +25,8 @@ import androidx.recyclerview.widget.RecyclerView
  * @param binding View data binding generated class instance.
  * @see RecyclerView.ViewHolder
  */
-abstract class BaseViewHolder<T : BaseModel,H:ViewDataBinding>(
-    val binding: H
-) : RecyclerView.ViewHolder(binding.root){
-    abstract fun bind(model:T)
-}
+//abstract class BaseViewHolder<T : BaseModel,H:ViewDataBinding>(
+//    val binding: H
+//) : RecyclerView.ViewHolder(binding.root){
+//    abstract fun bind(model:T)
+//}

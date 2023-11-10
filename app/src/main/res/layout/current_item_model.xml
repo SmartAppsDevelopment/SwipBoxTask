@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.templatesampleapp.model.ui.CurrencyUiModel" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/txt_currName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:text="@{model.targetCurrency}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_26ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="AUR" />
+
+
+            <TextView
+                android:id="@+id/txt_convertvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:text="@{model.getCurrentConvertedValue}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16ssp"
+                app:layout_constraintBottom_toTopOf="@id/txt_exchangerate1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="AUR" />
+
+
+            <TextView
+                android:id="@+id/txt_exchangerate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{model.currentRateToTargetCurrency}"
+                android:textColor="@color/brown"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_exchangerate2"
+                app:layout_constraintEnd_toEndOf="@+id/txt_convertvalue"
+                app:layout_constraintTop_toBottomOf="@+id/txt_convertvalue"
+                tools:text="1 HKD = 100 EUR" />
+
+
+            <TextView
+                android:id="@+id/txt_exchangerate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{model.getTargetRateToCurrentRateCurrency}"
+                android:textColor="@color/brown"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/txt_convertvalue"
+                app:layout_constraintTop_toBottomOf="@+id/txt_exchangerate1"
+                tools:text="1 HKD = 100 EUR" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
