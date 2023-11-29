@@ -50,6 +50,7 @@ Main Screenshot|Currency Chart|Whole App View
  * This Project is open for Extension__.
  * 3rd commit in single pull request.
  * 4th commit in single pull request.
+ * 5th commit in single pull request.
 
 
 
