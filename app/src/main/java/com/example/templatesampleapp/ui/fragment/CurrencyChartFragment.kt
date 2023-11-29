@@ -73,18 +73,11 @@ class CurrencyChartFragment :
             val title = "Currency Bar Chart"
 
             //input data
-
-            //input data
             hashMap.entries.forEach {
 
                 val barEntry = BarEntry(it.key, it.value)
                 entries.add(barEntry)
             }
-//            for (i in 0..5) {
-//                valueList.add(i * 100.1)
-//                val barEntry = BarEntry(i.toFloat(), valueList[i].toFloat())
-//                entries.add(barEntry)
-//            }
 
             val barDataSet = BarDataSet(entries, title)
             initBarDataSet(barDataSet)
