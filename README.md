@@ -1,5 +1,5 @@
 # Android MVVM Exchange Rate Currency App Task.
-This  is a sample app  that uses Currency Api [ExchangeRates](https://app.exchangerate-api.com/dashboard).
+This is a sample app  that uses Currency Api [ExchangeRates](https://app.exchangerate-api.com/dashboard).
 Create Bar Chart Using Api [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart).
 This project is generated from template [Android MVVM Example](https://github.com/SmartAppsDevelopment/GeneralMvvmTemplate)
 
@@ -43,6 +43,9 @@ This is a sample app  that uses kotlin coroutines [flow](https://developer.andro
 Main Screenshot|Currency Chart|Whole App View
 :--:|:--:|:--:|
 <img src="images/1.png" width="250px" />|<img src="images/2.png" width="250px" />|<img src="images/3.gif" width="250px" />
+
+# Fork Request .
+ * Pull and Fork the project if you want any change.
 
 
 
