@@ -14,7 +14,7 @@ import java.text.DecimalFormat
  */
 
 
-
+// Generic fun to show logs
 inline fun <reified T> T.showLog(msg: String, tag: String = this!!::class.java.simpleName) {
     Log.e(tag, msg)
 }

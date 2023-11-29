@@ -15,6 +15,8 @@ import com.example.templatesampleapp.utils.showLog
  * @author Umer Bilal
  * Created 11/9/2023 at 2:32 AM
  */
+
+// Mark it implemented the adapter List Adatper
 class ExchangeRvAdapter : ListAdapter<CurrencyUiModel, ExchangeRvAdapter.ExchangeViewHolder>(CurrencyModelDiffCallback()) {
 
 
