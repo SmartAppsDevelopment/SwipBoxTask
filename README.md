@@ -44,6 +44,10 @@ Main Screenshot|Currency Chart|Whole App View
 :--:|:--:|:--:|
 <img src="images/1.png" width="250px" />|<img src="images/2.png" width="250px" />|<img src="images/3.gif" width="250px" />
 
+# Fork Request .
+ * Pull and Fork the project if you want any change.
+ * This Project is open for Modifications.
+
 
 
 
