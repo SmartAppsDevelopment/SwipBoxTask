@@ -1,5 +1,5 @@
 # Android MVVM Exchange Rate Currency App Task.
-This is a sample app  that uses Currency Api [ExchangeRates](https://app.exchangerate-api.com/dashboard).
+This  is a sample app  that uses Currency Api [ExchangeRates](https://app.exchangerate-api.com/dashboard).
 Create Bar Chart Using Api [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart).
 This project is generated from template [Android MVVM Example](https://github.com/SmartAppsDevelopment/GeneralMvvmTemplate)
 
