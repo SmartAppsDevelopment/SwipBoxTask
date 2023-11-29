@@ -47,7 +47,7 @@ Main Screenshot|Currency Chart|Whole App View
 # Fork Request .
  * Pull and Fork the project if you want any change.
  * This Project is open for Modifications.
-
+ * This Project is open for Extension__.
 
 
 
