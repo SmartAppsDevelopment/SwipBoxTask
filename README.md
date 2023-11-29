@@ -48,9 +48,6 @@ Main Screenshot|Currency Chart|Whole App View
  * Pull and Fork the project if you want any change.
  * This Project is open for Modifications.
  * This Project is open for Extension__.
- * 3rd commit in single pull request.
- * 4th commit in single pull request.
- * 5th commit in single pull request.
 
 
 
